@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+/* Start Nav Bar CSS */
+
+header {
+    background-color: #4a545a;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+}
+
+/* .header-image {
+    padding: 12px 0;
+    padding-left: 20px;
+} */
+
+.header-image {
+    width: 172.797px;
+    height: 42.281px;
+    display: block;
+    margin: 12px 0;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    color: azure;
+    display: block;
+    padding: 17px 13px;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    color: rgb(164, 187, 187);
+}
+
+/* End Nav Bar CSS */
+
+/* Start Main Content */
+
+main {
+    margin: 20px 0;
+}
+
+.main-content {
+    display: flex;
+}
+
+/* End Main Content */
+
+/* Start Calculator CSS */
+
+.calculator {
+    max-width: 60%;
+    border: 2px solid rgb(0, 0, 0);
+    /* border-radius: 15px; */
+    overflow: hidden;
+    margin: 0 5px;
+    flex-grow: 1.5;
+}
+
+#output {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    padding: 0 15px;
+    font-size: 2.7em;
+}
+
+.calculator-keys {
+    margin: 5px 0 0;
+}
+
+.row {
+    display: flex;
+}
+
+.row button {
+    border: 3px solid white;
+    background-color: #b8b8b8;
+    font-size: 1.7em;
+    border-radius: 0;
+    width: 25%;
+    height: 3em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.row .clear, .row .zero {
+    /* width: 50%; */
+    flex-grow: 2;
+}
+
+.row button:last-child {
+    background-color: rgb(226, 154, 102);
+    border-right: none;
+}
+
+.row button:first-child {
+    border-left: none;
+}
+
+.row:first-child button {
+    border-top: none;
+}
+
+.row:last-child button {
+    border-bottom: none;
+}
+
+.row button:hover {
+    background-color: #d1d1d1;
+}
+
+.row button:last-child:hover {
+    background-color: rgb(231, 117, 35);
+}
+
+/* End Calculator CSS */
+
+/* Start Side Content CSS */
+
+.side-content {
+    flex-grow: 1;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* End Side Content CSS */
+
+/* Start Log History CSS */
+
+.history {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+}
+
+.history-title {
+    background-image: url('/resources/images/basic-calculator/history-icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 12.5px;
+    background-size: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.history-title p {
+    font-size: 1.2em;
+    padding: 15px 0;
+    padding-left: 40px;
+}
+
+.history-title div {
+    margin-right: 15px;
+}
+
+.reset-button {
+    /* font-size: 2.7em; */
+    padding: 5px 7px;
+    color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.reset-button:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.history-content {
+    overflow-y: auto;
+    /* height: calc(100% - 54px); */
+    height: 265.78px;
+}
+
+.history-content p {
+    text-align: right;
+    font-size: 1.3em;
+}
+
+.history-list {
+    padding: 12px 20px;
+}
+
+.history-list {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.history-list:first-child {
+    border-top: none;
+}
+
+.history-list:last-child {
+    border-bottom: none;
+}
+
+/* End Log History CSS */
+
+/* Start Math Trivia CSS */
+
+.math-trivia {
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+
+.trivia-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.trivia-title p {
+    font-size: 1.2em;
+    margin: 7px 0;
+    padding: 5px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+    border: 3px solid rgb(230, 230, 230);
+}
+
+.trivia-title p:hover {
+    background-color: rgb(209, 209, 209);
+    border-color: rgb(209, 209, 209);
+}
+
+.trivia-title div {
+    margin-right: 15px;
+}
+
+.close-icon {
+    font-size: 1.9em;
+    transition: color 0.2s;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.close-icon:hover {
+    color: #b93430;
+}
+
+.trivia-text {
+    box-sizing: border-box;
+    height: calc(100% - 54px);
+    border-style: outset;
+    border-width: 7px;
+    border-color: #afafaf;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trivia-text p {
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.3em;
+    max-width: 276px;
+    margin: 0 auto;
+    transition: all 0.7s;
+}
+
+/* End Math Trivia CSS */
+
+/* Start Footer CSS */
+
+footer {
+    background-color: #494d50;
+    color: white;
+    max-height: 300px;
+}
+
+.fa-github {
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin: 12px 3px;
+}
+
+footer ul li a {
+    display: block;
+    padding: 5px 7px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer ul li a:hover {
+    background-color: #616568;
+}
+
+footer hr {
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    opacity: 0.3;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    margin: 15px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.love-icon {
+    color: #f02c25;
+}
+
+/* End Footer CSS */

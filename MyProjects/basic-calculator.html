@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Basic Calculator</title>
+        <link rel="shortcut icon" href="/resources/favicon/basic-calculator.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/basic-calculator/main.css">
+        <link rel="stylesheet" href="/css/basic-calculator/responsive.css">
+        <script defer src="https://kit.fontawesome.com/c542e3f794.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+                <img src="/resources/images/basic-calculator/header-logo.png" alt="Logo" class="header-image">
+
+            <nav>
+                <ul>
+                    <li><a href="/"><span class="home-icon"><i class="fa-sharp fa-solid fa-house"></i></span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <div class="calculator">
+                    <input type="text" name="calculator" id="output" disabled>
+                    <div class="calculator-keys">
+                        <div class="row">
+                            <button type="button" class="clear">AC</button>
+                            <button type="button" class="percent">%</button>
+                            <button type="button" class="operator">&divide;</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="number">7</button>
+                            <button type="button" class="number">8</button>
+                            <button type="button" class="number">9</button>
+                            <button type="button" class="operator">&times;</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number">6</button>
+                            <button type="button" class="operator">-</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="operator">+</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="number zero">0</button>
+                            <button type="button" class="decimal">.</button>
+                            <button type="button" class="result">=</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-content">
+                    <div class="history">
+                        <div class="history-title">
+                            <p>History</p>
+                            <div><span class="reset-button">Reset</span></div>
+                        </div>
+                        <div class="history-content">
+                        </div>
+                    </div>
+
+                    <div class="math-trivia">
+                        <div class="trivia-title">
+                            <p>Numbers Trivia</p>
+                            <div><span class="close-icon">&times;</span></div>
+                        </div>
+                        <div class="trivia-text">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="https://github.com/naufal-alwi-p" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            <hr>
+            <p>
+                Created with <span class="love-icon"><i class="fa-solid fa-heart"></i></span> by Naufal Alwi Pratama
+            </p>
+            <p class="year"></p>
+        </footer>
+
+        <script src="/script/basic-calculator/main.js"></script>
+    </body>
+</html>
