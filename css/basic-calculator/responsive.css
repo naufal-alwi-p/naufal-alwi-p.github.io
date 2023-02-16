@@ -1,5 +1,7 @@
-@media screen and (max-width: 1000px) {
+/* Removed Because no Numbers Trivia */
 
+/* @media screen and (max-width: 1000px) {
+    
     .history {
         height: 100%;
     }
@@ -41,7 +43,7 @@
         visibility: visible;
         padding: 15px 10px;
     }
-}
+} */
 
 @media screen and (max-width: 700px) {
 

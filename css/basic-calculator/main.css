@@ -161,7 +161,8 @@ main {
 .history {
     background-color: rgb(255, 255, 255);
     width: 90%;
-    height: 60%;
+    /* Removed Because no Numbers Trivia*/
+    /* height: 60%; */
     border-radius: 10px;
     border: 1px solid #dfdfdf;
 }
@@ -232,6 +233,9 @@ main {
 
 /* Start Math Trivia CSS */
 
+/* Removed Because no Numbers Trivia*/
+
+/* 
 .math-trivia {
     background-color: rgb(255, 255, 255);
     height: 40%;
@@ -300,7 +304,7 @@ main {
     max-width: 276px;
     margin: 0 auto;
     transition: all 0.7s;
-}
+} */
 
 /* End Math Trivia CSS */
 
