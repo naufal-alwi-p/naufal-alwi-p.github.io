@@ -151,7 +151,7 @@ triviaBtn.addEventListener("click", () => {
         triviaTextP.style.transform = "scale(0.1, 0.1)"
         triviaTextP.style.visibility = "hidden";
     
-        const fetchMathTrivia = fetch("http://numbersapi.com/random/trivia");
+        const fetchMathTrivia = fetch("https://numbersapi.com/random/trivia");
     
         fetchMathTrivia
             .then((response) => {
@@ -169,7 +169,7 @@ triviaBtn.addEventListener("click", () => {
                 console.log(error);
             });
     } else {
-        const fetchMathTrivia = fetch("http://numbersapi.com/random/trivia");
+        const fetchMathTrivia = fetch("https://numbersapi.com/random/trivia");
     
         fetchMathTrivia
             .then((response) => {
