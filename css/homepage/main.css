@@ -1,0 +1,94 @@
+.drop1 {
+    position: relative;
+    display: inline-block;
+}
+
+.drop1btn {
+    border: none;
+    font-size: 15px;
+    padding: 16px 20px;
+    background-color: rgb(14, 136, 54);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.drop1content {
+    display: none;
+    position: absolute;
+    background-color: #d2d2d2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 170px;
+    z-index: 1;
+}
+
+.drop1content a {
+    display: block;
+    color: black;
+    text-decoration-line: none;
+    padding: 9px 20px;
+}
+
+.drop1:hover .drop1content {
+    display: block;
+}
+
+.drop1:hover .drop1btn {
+    background-color: rgb(53, 116, 82);
+}
+
+.drop1content a:hover {
+    background-color: #a7a7a7;
+}
+
+.hal {
+    height: 1000px;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(39, 39, 53);
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    padding: 15px 22px;
+    color: white;
+    text-decoration-line: none;
+}
+
+.home {
+    background-color: rgb(40, 122, 54);
+}
+
+#nav li a:hover:not(.home),
+#nav .drop:hover .dropbtn {
+    background-color: rgb(24, 23, 23);
+}
+
+.content {
+    display: none;
+    position: absolute;
+    width: 170px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+    background-color: #8ea9b1;
+}
+
+#nav .drop .content a {
+    color: black;
+    text-align: center;
+}
+
+#nav .drop .content a:hover {
+    background-color: #5a637c;
+}
+
+#nav .drop:hover .content {
+    display: block;
+}
